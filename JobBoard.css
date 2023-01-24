@@ -1,0 +1,122 @@
+/* Use a layout grid to create a consistent layout */
+#job-listings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Style the font and color scheme for a cohesive look */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h2 {
+    color: #1e90ff;
+  }
+  
+  /* Add hover effects to the links and buttons */
+  a:hover,
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #1e90ff;
+    color: #fff;
+  }
+  
+  /* Style the form for submitting new job listings */
+  #job-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #job-form label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #job-form input[type="text"],
+  #job-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style the job listings */
+  #job-list li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  #job-list h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Default styles for light mode */
+body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Styles for dark mode */
+  body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /* Style for the mode switch */
+  #mode-switch {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #mode-switch button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #mode-switch button:hover {
+    background-color: #0077be;
+  }
+  
+/*
+Here we are setting the text-align to center, 
+so that the recent job listings title will be centered on the webpage
+*/
+.recent-job-listings {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/*
+Here we are setting the width of the job listings container to be the same as the width of the viewport,
+and setting the overflow property to be scroll so that the job listings will show a scroll bar when they overflow the container
+*/
+#job-list {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+}
+
+/*
+Here we are setting the max-width of the job listings container to be the same as the width of the viewport, 
+and setting the overflow property to be hidden so that the job listings will not expand the width of the webpage
+*/
+#job-list li {
+    flex: 0 0 auto;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+ 
+  

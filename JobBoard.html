@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Board</title>
+  <link rel="stylesheet" type="text/css" href="JobBoard.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+
+      </ul>
+    </nav>
+
+    <div id="mode-switch">
+        <button id="light-mode-btn">Light mode</button>
+        <button id="dark-mode-btn">Dark mode</button>
+      </div>
+    </header>
+
+  <main>
+    <section id="job-listings">
+      <h2>Recent Job Listings</h2>
+      <ul id="job-list">
+        <!-- job listings will be added here dynamically -->
+      </ul>
+    </section>
+    <section id="post-job-form">
+      <h2>Post a Job</h2>
+      <form id="job-form">
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title">
+        <label for="job-description">Job Description:</label>
+        <textarea id="job-description" name="job-description"></textarea>
+        <input type="submit" value="Post Job">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2023 Brian F</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
